@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Permanent+Marker&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 40vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  text-align: center;
+  border-radius: 20px;
+  cursor: grab;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 20px 0px rgba(255, 255, 255, 0.8),
+  0px 0px 30px 0px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.2s ease;
+  
+}
+.cards:active{
+  cursor: grabbing;
+  box-shadow: 0 0 30px white;
+}
+
+.img{
+width: 90%;
+height: 50%;
+position: absolute;
+top: 5px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+p{
+  color: rgb(182, 178, 178);
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
